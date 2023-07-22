@@ -7,7 +7,7 @@ import sendSMSRoute from "./mocked/sendSMS.js";
 const app = express();
 app.use(express.json());
 
-app.use("/mocked", sendSMSRoute);
+app.use("/mocked", sendSMSRoute); // mocked SMS service providers end points
 app.use('/api-docs', serveSwaggerUI, setupSwaggerUI); // API-Docs end point
 
 // Setting up routes
